@@ -6,4 +6,4 @@ pin "@hotwired/stimulus", to: "stimulus.min.js"
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "bootstrap", to: "bootstrap.bundle.min.js"
-pin "@revenuecat/purchases-js", to: "@revenuecat--purchases-js.js" # @1.5.3
+pin "@revenuecat/purchases-js", to: "https://cdn.jsdelivr.net/npm/@revenuecat/purchases-js@1.5.3/dist/Purchases.es.js"

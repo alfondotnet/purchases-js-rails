@@ -1,0 +1,57 @@
+# --- General ---
+# Ignore OS-specific files
+.DS_Store
+*.swp
+*~
+*#
+
+# Ignore local environment variables
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# --- Rails ---
+# Ignore logs and temporary files
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore locally installed gems (though we use Docker, this is good practice)
+/vendor/bundle/
+
+# Ignore local database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore storage directory for Active Storage uploads
+/storage/*
+!/storage/.keep
+
+# Ignore master key for credentials
+/config/master.key
+
+# Ignore sass cache
+.sass-cache/
+
+# Ignore pidfiles and socket files
+/tmp/pids/
+/tmp/sockets/
+
+# --- JavaScript ---
+# Ignore node_modules directory
+/node_modules/
+
+# Ignore Yarn and NPM log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# --- Docker ---
+# If you have local Docker overrides, you might want to ignore them
+# For example:
+# docker-compose.override.yml

@@ -1,0 +1,18 @@
+<%# app/views/pages/home.html.erb %>
+<div style="text-align: center; padding: 2rem;">
+  <h1>Rails + Importmap + Stimulus Reproduction</h1>
+  <p>This page uses a Stimulus controller to load the RevenueCat SDK.</p>
+
+  <div data-controller="paywall">
+
+    <%# This ID is required by the JavaScript %>
+    <div id="status" style="padding: 1em; margin: 1em 0; border-radius: 5px;">Initializing...</div>
+    <br>
+
+    <%# This ID and data-action are now correct %>
+    <button id="purchase-button" data-action="click->paywall#startPurchase" style="padding: 10px 20px; font-size: 16px;" disabled>
+      Loading SDK...
+    </button>
+
+  </div>
+</div>

@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: "3.9"
+services:
+  web:
+    build: .
+    command: ./bin/rails server -b 0.0.0.0
+    volumes:
+      - .:/app # <-- Change this line
+    ports:
+      - "3000:3000"
